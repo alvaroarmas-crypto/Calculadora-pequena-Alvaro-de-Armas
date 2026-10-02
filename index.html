@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora pequeña</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="codigo.js" defer></script>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Calculadora pequeña</h1>
+
+        <!-- CAMPO DE INFORMACIÓN MEJORADO (Ampliación 1) -->
+        <h2 id="info" class="big" title="Información sobre el número">Información sobre el número</h2>
+
+        <!-- Campo de entrada principal -->
+        <div class="input-group">
+            <label for="n1">Número / CSV principal:</label>
+            <input type="text" id="n1" placeholder="Introduce número o lista CSV">
+        </div>
+
+        <!-- SEGUNDO CAMPO (Para la potenciación de la Ampliación 2) -->
+        <div class="input-group" id="second-input-group" style="display:none;">
+            <label for="n2">Exponente (segundo número):</label>
+            <input type="text" id="n2" placeholder="Introduce la potencia">
+        </div>
+
+        <!-- Operaciones Unarias y Nuevas Operaciones (Ampliación 2: Raíz Cuadrada y Potenciación) -->
+        <div class="button-section">
+            <h3>Operaciones Unarias y Nuevas</h3>
+            <button id="b-square">x<sup>2</sup></button>
+            <button id="b-modulo">modulo (|X|)</button>
+            <button id="b-factorial">factorial (!X)</button>
+            <button id="b-sqrt">√X (Raíz)</button>
+            <button id="b-power">x<sup>y</sup> (Potencia)</button>
+        </div>
+
+        <!-- Operaciones Binarias -->
+        <div class="button-section">
+            <h3>Operaciones Binarias</h3>
+            <button id="b-suma">+</button>
+            <button id="b-resta">-</button>
+            <button id="b-mult">×</button>
+            <button id="b-div">÷</button>
+            <button id="b-igual">=</button>
+        </div>
+
+        <!-- Operaciones CSV Ampliadas (Ampliación 3) -->
+        <div class="button-section">
+            <h3>Operaciones con CSV Ampliadas</h3>
+            <button id="b-sum-csv">sum()</button>
+            <button id="b-mean-csv">mean() (Media)</button>
+            <button id="b-sort-csv">sort()</button>
+            <button id="b-reverse-csv">reverse()</button>
+            <button id="b-removelast">removelast()</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
